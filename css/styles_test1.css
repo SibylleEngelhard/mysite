@@ -1,0 +1,30 @@
+body{
+	font-size: 16px;
+	background-color: white;
+	color:white;
+    /*font-family: 'Roboto', sans-serif;*/
+	font-family: 'PT Sans', sans-serif;
+	font-weight: 700;
+}
+#header-nav{
+	background-color: #f6b319;
+	border-radius: 0;
+	border: 0;
+
+}
+
+#logo-img{
+	background: url('/images/logo3.png')no-repeat;
+	width:50px;
+	height:50px;
+	/*margin:10px 10px 10px 0;*/
+	overflow:hidden;
+	background-size:cover;
+	background-position: left;
+	
+}
+
+.dark_line{
+	height:5px;
+	background-color: #121644e8;
+}

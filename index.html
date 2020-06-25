@@ -3,17 +3,74 @@
 <head>
 	<meta=charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<title>Bootstrap Starter Page</title>
+<title>Siby's Page</title>
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet"> 
 
 </head>
 <body>
+	<header>
+		<nav id="header-nav" class="navbar navbar-expand-sm navbar-dark">
+		
+		<!--
+		<nav id="header-nav" class="navbar navbar-default">
+		-->	
+
+		<!--
+		<nav id="header-nav" class="navbar navbar-expand-sm 
+		bg-dark navbar-dark">-->
+	
+		  <div class="container">
+		    <div class="navbar-header">
+				<a href="index.html" class="float-left visible-md visible-lg">
+					<div id="logo-img" alt="Logo image"></div>
+				</a> 
+		    	<a class="navbar-brand" href="index.html"><h1>Testsite</h1></a>
+		    </div>
+
+		    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+		    	<span class="navbar-toggler-icon"></span>
+		  	</button>
+			<div id="collapsible-nav" class="collapse navbar-collapse" id="collapsibleNavbar">
+
+			    <ul id="nav-list" class="navbar-nav">
+				    <li class="nav-item active">
+				      <a class="nav-link" href="#">Active</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Link</a>
+				    </li>
+				    <li class="nav-item">
+				      <a class="nav-link" href="#">Link</a>
+				    </li>
+				    <!--<li class="nav-item">
+				      <a class="nav-link disabled" href="#">Disabled</a>
+				    </li>-->
+			  	</ul>
+			</div>
+		  </div>
+		</nav>
+
+
+
+
+
+
+		<div class="dark_line"></div>
+	</header>
 
 	<h1>Heading</h1>
-<div class="container-fluid">
+
+	<img src="/images/sossusvlei.jpg" width="400" height="255" alt="picture of dunes"><hr>
+	<img src="/images/farm1.jpg" width="400" height="255" alt="picture of dunes">
+	<img src="/images/farm2.jpg" width="400" height="255" alt="picture of dunes"><hr>
+	<img src="/images/farm3.jpg" width="400" height="255" alt="picture of dunes">
+	<img src="/images/farm4.jpg" width="400" height="255" alt="picture of dunes"><hr>
+
+<!--<div class="container-fluid">
 	<div class="row">
 		<div class="col-md-4 col-sm-6">Col 1</div>
 		<div class="col-md-4 col-sm-6">Col 2</div>
@@ -30,7 +87,7 @@
 		<div class="col-xs-6">Col 3</div>
 	</div>
 </div>
-
+-->
 
 <script src="js/jquery-3.5.1.js">></script>
 <script src="js/bootstrap.min.js">></script>
