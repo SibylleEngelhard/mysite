@@ -4,13 +4,19 @@ body{
 	color:black;
     /*font-family: 'Roboto', sans-serif;*/
 	font-family: 'PT Sans', sans-serif;
+	
 	font-weight: 700;
 }
 #header-nav{
 	background-color: #f6b319;
 	border-radius: 0;
-	border: 0;
-    
+	border: 0;   
+}
+
+
+.navbar-light .navbar-nav .nav-link {
+    color:#121644e8;
+    font-size: 1.3em;
 }
 
 #logo-img{
@@ -24,30 +30,23 @@ body{
 	
 }
 
-
-}
-
 .navbar-brand{
 	height:50px;
 }
 
 .navbar-brand h1{
 	color:#121644e8;
+	font-family: 'Piedra', cursive;
 	/*color:#557c3e;*/
-	f/*ont-family:Helvetica;*/
-	font-size:1.3em;
+	/*ont-family:Helvetica;*/
+	font-size:1.7em;
 	/*font-weight:bold;*/
 	/*text-shadow: 1px 1px 1px #222;*/
 	margin-top:0;
 	margin-bottom:0;
-	line-height:.9em;
+	line-height:1.25em;
 	margin-left:15px;
-
 	
-}
-
-.navbar-brand a:hover, .navbar-brand a:focus{
-	text-decoration: none;
 }
 
 .navbar-brand p{
@@ -58,6 +57,71 @@ body{
 .navbar-brand p span{
 	vertical-align:middle;
 }
+
+.custom-toggler.navbar-toggler{
+	border-color:#121644e8;
+}
+/*.custom-toggler.navbar-toggler-icon {
+background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 32 32′ xmlns=’http://www.w3.org/2000/svg’%3E%3Cpath stroke=’rgba(18, 22, 68, 0.91)’ stroke-width=’2′ stroke-linecap=’round’ stroke-miterlimit=’10’ d=’M4 8h24M4 16h24M4 24h24’/%3E%3C/svg%3E”);
+}
+*/	
+
+
 .dark_line{
 	height:5px;
 	background-color: #121644e8;
+}
+
+
+
+.jumbotron{
+	padding:0;
+	box-shadow: 0 0 70px #3F0C1F;
+	border:2px solid #3F0C1F;
+	border-radius:20%;
+
+}
+#sub-html-1, #sub-html-2,#map-tile{
+	height:250px;
+	width:100%;
+	margin-bottom: 15px;
+	position:relative;
+	border:2px solid #3F0C1F;
+	overflow:hidden;
+
+}
+#sub-html-1:hover, #sub-html-2:hover,#map-tile:hover{
+	box-shadow: 0 1px 5px 1px #3F0C1F;
+}
+#sub-html-1{
+	background:url('../images/farm1.jpg') no-repeat;
+	background-position: center;
+}
+
+#sub-html-2{
+	background:url('../images/sossusvlei.jpg') no-repeat;
+	background-position: center;
+}
+
+@media (min-width:1200px){
+	
+}
+
+@media (min-width:992px) and (max-width:1199px){
+	#logo-img{background: url('/images/logo3.png')no-repeat;
+		width:50px;
+		height:50px;
+		/*margin:10px 10px 10px 0;*/
+		overflow:hidden;
+		background-size:cover;
+		background-position: left;
+		}
+	
+}
+
+@media (min-width:768px) and (max-width:991px){
+	
+}
+
+@media (max-width:767px) {
+}
