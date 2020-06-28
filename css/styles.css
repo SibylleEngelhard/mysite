@@ -20,7 +20,7 @@ body{
 }
 
 #logo-img{
-	background: url('/images/logo3.png')no-repeat;
+	background: url('../images/logo3.png')no-repeat;
 	width:50px;
 	height:50px;
 	/*margin:10px 10px 10px 0;*/
@@ -81,27 +81,57 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 	border-radius:20%;
 
 }
-#sub-html-1, #sub-html-2,#map-tile{
+#farm, #sossusvlei,#map-tile{
 	height:250px;
 	width:100%;
 	margin-bottom: 15px;
 	position:relative;
-	border:2px solid #3F0C1F;
+	
 	overflow:hidden;
+	box-shadow: 0 0 50px #3F0C1F;
+		border:2px solid #3F0C1F;
 
 }
-#sub-html-1:hover, #sub-html-2:hover,#map-tile:hover{
+#farm:hover, #sossusvlei:hover,#map-tile:hover{
 	box-shadow: 0 1px 5px 1px #3F0C1F;
 }
-#sub-html-1{
+#farm{
 	background:url('../images/farm1.jpg') no-repeat;
 	background-position: center;
+	overflow:hidden;
+	background-size:cover;
+	
 }
 
-#sub-html-2{
+#sossusvlei{
 	background:url('../images/sossusvlei.jpg') no-repeat;
 	background-position: center;
+	overflow:hidden;
+	background-size:cover;
+	
 }
+
+#map-tile{
+	background:url('../images/sossusvlei.jpg') no-repeat;
+	background-position: center;
+	overflow:hidden;
+	background-size:cover;}
+
+
+#farm span, #sossusvlei span,#map-tile span{
+	position:absolute;
+	bottom:0;
+	right:0;
+	width:100%;
+	text-align: center;
+	font-size: 1.5em;
+	font-weight: normal;
+	
+	background-color: #000;
+	color:#fff;
+	opacity:.6;
+}
+
 
 @media (min-width:1200px){
 	
@@ -123,5 +153,11 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 	
 }
 
-@media (max-width:767px) {
+
+@media (max-width:479px) {
+
+	#sossusvlei, #farm,#map-tile{
+		width:280px;
+		margin:0 auto 15px;
+	}
 }
