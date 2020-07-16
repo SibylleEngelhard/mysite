@@ -18,6 +18,15 @@ body{
     color:#121644e8;
     font-size: 1.3em;
 }
+.nav-link.active{
+    color:black;
+    font-size: 2em;
+    
+  	
+  	border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
 
 #logo-img{
 	background: url('../images/logo3.png')no-repeat;
@@ -72,7 +81,9 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 	background-color: #121644e8;
 }
 
-
+h1, h2{
+	color:#abc9e6;
+}
 
 .jumbotron{
 	padding:0;
@@ -96,7 +107,7 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 	box-shadow: 0 1px 5px 1px #3F0C1F;
 }
 #farm{
-	background:url('../images/farm1.jpg') no-repeat;
+	background:url('../images/farm1_1200.jpg') no-repeat;
 	background-position: center;
 	overflow:hidden;
 	background-size:cover;
@@ -104,7 +115,7 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 }
 
 #sossusvlei{
-	background:url('../images/sossusvlei.jpg') no-repeat;
+	background:url('../images/sossusvlei_1200.jpg') no-repeat;
 	background-position: center;
 	overflow:hidden;
 	background-size:cover;
@@ -112,7 +123,7 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 }
 
 #map-tile{
-	background:url('../images/sossusvlei.jpg') no-repeat;
+	background:url('../images/sossusvlei_1200.jpg') no-repeat;
 	background-position: center;
 	overflow:hidden;
 	background-size:cover;}
@@ -128,9 +139,142 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 	font-weight: normal;
 	
 	background-color: #000;
-	color:#fff;
+	color:#abc9e6;
 	opacity:.6;
 }
+
+
+#farm-categories-title{
+	margin-bottom: 50px;
+	margin-top:20px;
+}
+
+.category-tile{
+	position:relative;
+	border:2px solid #3F0C1F;
+	overflow:hidden;
+	width:200px;
+	height:200px;
+	margin:0 auto 15px;
+	
+}
+.category-tile img{
+	background-position: center;
+	overflow:hidden;
+	background-size:cover;}
+
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	
+	
+	background-color: #000;
+	color:#abc9e6;
+	opacity:.6;
+}
+.single-trail-tile{
+	color:#abc9e6;
+}
+.single-trail-title{
+	margin-bottom: 25px;
+
+}
+
+.single-trail-tile hr{
+	width:80%;
+}
+.single-trail-tile .single-trail-price{
+	font-size: 1.1em;
+	text-align: right;
+	margin-top: -15px;
+	margin-right: -15px;
+}
+
+.single-trail-tile .single-trail-price span{
+	font-size: .6em;
+
+}
+
+.single-trail-photo{
+	position:relative;
+	border:2px solid black;
+	overflow: hidden;
+	padding: 0;
+	margin-right: -15px;
+	margin-left: auto;
+	margin-bottom: 20px;
+	max-width:250px;
+}
+
+.single-trail-photo div{
+	position: absolute;
+	bottom: 0;
+	right:0;
+	width:80%;
+	background-color: #000;
+	text-align: center;
+
+	color:#abc9e6;
+	opacity:.6;
+
+
+
+}
+
+.single-trail-description{
+	padding-right: 30px;
+}
+h3.single-trail-title{
+	margin: 0 0 10px;
+}
+.single-trail-details{
+font-size: .9em;
+font-style: italic;
+}
+
+
+.border-top{
+	border-color: #121644e8;
+	border-top: 5px solid #121644e8!important;
+}
+.panel-footer{
+	margin-top:30px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: #f6b319;
+	
+}
+.panel-footer div.row{
+	margin-bottom:35px;
+}
+
+#hours,#address{
+	line-height:2;
+}
+
+
+#address p{
+	color:#557c3e;
+	font-size:.8em;
+	line-height: 1.8;
+}
+
+#hours > span,#address > span{
+	font-size: 1.3em;
+	color:black;
+}
+
+#testimonials{
+	font-style:italic;
+}
+
+
+
 
 
 @media (min-width:1200px){
@@ -150,14 +294,62 @@ background-image: url(“data:image/svg+xml;charset=utf8, %3Csvg viewBox=’0 0 
 }
 
 @media (min-width:768px) and (max-width:991px){
-	
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+
+	}
+.panel-footer section hr{
+	width:50%;
+}
+}
+
+@media (min-width:480px) and (max-width:767px){
+.single-trail-photo{
+	margin-right: auto;
+}
+.single-trail-tile .single-trail-price{
+	text-align: center;
+}
+.single-trail-description{
+	text-align: center;
+}
+}
+
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+
+	}
+.panel-footer section hr{
+	width:50%;
 }
 
 
+
+}
 @media (max-width:479px) {
 
 	#sossusvlei, #farm,#map-tile{
 		width:280px;
 		margin:0 auto 15px;
 	}
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+
+	}
+.panel-footer section hr{
+	width:50%;
+}
+
+.single-trail-photo{
+	margin-right: auto;
+}
+.single-trail-tile .single-trail-price{
+	text-align: center;
+}
+.single-trail-description{
+	text-align: center;
+}
 }
